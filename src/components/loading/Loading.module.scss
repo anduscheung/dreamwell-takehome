@@ -1,0 +1,60 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background: #fbfbfa;
+  border-radius: 10px;
+}
+
+.loading-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .icon-placeholder {
+    width: 24px;
+    height: 24px;
+    background: #dee1e6;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+    color: #1f2937;
+    font-weight: 600;
+  }
+}
+
+.loading-box {
+  background: #f9f9f8;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  .line {
+    height: 8px;
+    background: #d4d4d4;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite;
+
+    &.short {
+      width: 50%;
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-color: #d4d4d4;
+  }
+  50% {
+    background-color: #e4e4e4;
+  }
+  100% {
+    background-color: #d4d4d4;
+  }
+}
